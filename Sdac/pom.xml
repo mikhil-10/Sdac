@@ -1,0 +1,120 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>Sdac</groupId>
+	<artifactId>Sdac</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
+	
+	<dependencies>
+		<!-- Servlet API -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>4.0.1</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- MySQL Connector/J -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.27</version>
+		</dependency>
+		       
+      <!-- PDF -->     
+      <dependency>         
+         <groupId>com.itextpdf</groupId>         
+         <artifactId>kernel</artifactId>         
+         <version>7.0.2</version>     
+      </dependency>  
+      
+      <dependency>         
+         <groupId>com.itextpdf</groupId>         
+         <artifactId>io</artifactId>         
+         <version>7.0.2</version>     
+      </dependency>  
+      
+      <dependency>         
+         <groupId>com.itextpdf</groupId>         
+         <artifactId>layout</artifactId>         
+         <version>7.0.2</version>
+      </dependency>  
+      
+      <dependency>         
+         <groupId>com.itextpdf</groupId>         
+         <artifactId>forms</artifactId>         
+         <version>7.0.2</version>    
+      </dependency>  
+      
+      <dependency>         
+         <groupId>com.itextpdf</groupId>         
+         <artifactId>pdfa</artifactId>         
+         <version>7.0.2</version>     
+      </dependency>  
+      
+      <dependency>         
+         <groupId>com.itextpdf</groupId>         
+         <artifactId>sign</artifactId>         
+         <version>7.0.2</version>     
+      </dependency>  
+      
+      <dependency>         
+         <groupId>com.itextpdf</groupId>         
+         <artifactId>barcodes</artifactId>         
+         <version>7.0.2</version>     
+      </dependency>  
+      
+      <dependency>         
+         <groupId>com.itextpdf</groupId>         
+         <artifactId>font-asian</artifactId>         
+         <version>7.0.2</version>     
+      </dependency>  
+      
+      <dependency>         
+         <groupId>com.itextpdf</groupId>         
+         <artifactId>hyph</artifactId>         
+         <version>7.0.2</version>    
+      </dependency> 
+
+    <!-- Selenium WebDriver -->
+    <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>3.141.59</version>
+    </dependency>
+
+    <!-- ChromeDriver -->
+    <dependency>
+        <groupId>io.github.bonigarcia</groupId>
+        <artifactId>webdrivermanager</artifactId>
+        <version>5.1.1</version>
+        <scope>test</scope>
+    </dependency>
+
+    <dependency>
+    	<groupId>Login5</groupId>
+    	<artifactId>Login5</artifactId>
+    	<version>0.0.1-SNAPSHOT</version>
+    </dependency>
+	</dependencies>
+   
+
+
+	
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
+				<configuration>
+					<release>18</release>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>3.2.3</version>
+			</plugin>
+		</plugins>
+	</build>
+</project>
